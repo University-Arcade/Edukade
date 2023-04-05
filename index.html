@@ -1,250 +1,132 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
-
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>EduCade | Don't Be Last</title>
-
-    <script defer src="script.js"></script>
-</head>
-
-<body>
-    <header class="header">
-        <nav class="nav">
-            <!-- <img src="img/logo.png" alt="Bankist logo" class="nav__logo" id="logo" designer="JT"
-                data-version-number="3.0" /> -->
-            <img src="img/banner-logo.png" alt="EduCade Logo" class="nav__logo" id="logo" designer="JT"
-                data-version-number="3.0" />
-            <ul class="nav__links">
-                <li class="nav__item">
-                    <a class="nav__link" href="#section--1"> Games </a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#section--2"> Leaderboard </a>
-                </li>
-                <!-- <li class="nav__item">
-                    <a class="nav__link" href="#section--3">Testimonials</a>
-                </li> -->
-                <li class="nav__item">
-                    <a class="nav__link nav__link--btn btn--show-modal" href="#">Create Account</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="header__title">
-            <!-- <h1 onclick="alert('HTML alert')"> -->
-            <h1>
-                Where
-                <!-- Green highlight effect -->
-                <span class="highlight">universities</span>
-                come to <span class="highlight">compete</span>
-            </h1>
-            <h4>An online arcade for students from universities nationwide to team up, compete, and rank up!</h4>
-            <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-            <img src="img/hero.png" class="header__img" alt="Minimalist bank items" />
-        </div>
-    </header>
-
-    <section class="section" id="section--1">
-        <div class="section__title">
-            <h2 class="section__description">Games</h2>
-            <h3 class="section__header">
-                Vintage arcade games brought to the web.
-            </h3>
-        </div>
-
-        <div class="features">
-            <img src="img/digital-lazy.jpg" data-src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
-            <div class="features__feature">
-                <div class="features__icon">
-                    <svg>
-                        <use xlink:href="img/icons.svg#icon-monitor"></use>
-                    </svg>
-                </div>
-                <h5 class="features__header">100% digital bank</h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
-                    sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
-                    debitis ducimus.
-                </p>
-            </div>
-
-            <div class="features__feature">
-                <div class="features__icon">
-                    <svg>
-                        <use xlink:href="img/icons.svg#icon-trending-up"></use>
-                    </svg>
-                </div>
-                <h5 class="features__header">Watch your money grow</h5>
-                <p>
-                    Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
-                    inventore ab? Nulla incidunt eius numquam sequi iste pariatur
-                    quibusdam!
-                </p>
-            </div>
-            <img src="img/grow-lazy.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
-
-            <img src="img/card-lazy.jpg" data-src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
-            <div class="features__feature">
-                <div class="features__icon">
-                    <svg>
-                        <use xlink:href="img/icons.svg#icon-credit-card"></use>
-                    </svg>
-                </div>
-                <h5 class="features__header">Free debit card included</h5>
-                <p>
-                    Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
-                    eveniet consequatur odit quam quos possimus assumenda dicta fuga
-                    inventore ab.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="section--2">
-        <div class="section__title">
-            <h2 class="section__description">Leaderboard</h2>
-            <h3 class="section__header">
-                Where does your university rank?
-            </h3>
-        </div>
-
-        <div class="operations">
-            <div class="operations__tab-container">
-                <button class="btn operations__tab operations__tab--1 operations__tab--active" data-tab="1">
-                    <span>01</span>University Leaderboard
-                </button>
-                <button class="btn operations__tab operations__tab--2" data-tab="2">
-                    <span>02</span>Solo Leaderboard
-                </button>
-                <button class="btn operations__tab operations__tab--3" data-tab="3">
-                    <span>03</span>Playoff Bracket
-                </button>
-            </div>
-            <div class="operations__content operations__content--1 operations__content--active">
-                <div class="operations__icon operations__icon--1">
-                    <svg>
-                        <use xlink:href="img/icons.svg#icon-upload"></use>
-                    </svg>
-                </div>
-                <h5 class="operations__header">
-                    Transfer money to anyone, instantly! No fees, no BS.
-                </h5>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
-                </p>
-            </div>
-
-            <div class="operations__content operations__content--2">
-                <div class="operations__icon operations__icon--2">
-                    <svg>
-                        <use xlink:href="img/icons.svg#icon-home"></use>
-                    </svg>
-                </div>
-                <h5 class="operations__header">
-                    Buy a home or make your dreams come true, with instant loans.
-                </h5>
-                <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.
-                </p>
-            </div>
-            <div class="operations__content operations__content--3">
-                <div class="operations__icon operations__icon--3">
-                    <svg>
-                        <use xlink:href="img/icons.svg#icon-user-x"></use>
-                    </svg>
-                </div>
-                <h5 class="operations__header">
-                    No longer need your account? No problem! Close it instantly.
-                </h5>
-                <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="section" id="section--3">
-        <div class="section__title section__title--testimonials">
-            <h2 class="section__description">Not sure yet?</h2>
-            <h3 class="section__header">
-                Millions of Bankists are already making their lifes simpler.
-            </h3>
-        </div> -->
-
-    <section class="section section--sign-up">
-        <div class="section__title">
-            <h3 class="section__header">
-                Your University needs your help. Verify your student email to get started today!
-            </h3>
-        </div>
-        <button class="btn btn--show-modal">Create Educade Account</button>
-    </section>
-
-    <footer class="footer">
-        <ul class="footer__nav">
-            <!-- <li class="footer__item">
-                <a class="footer__link" href="#">About</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">Pricing</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">Terms of Use</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">Privacy Policy</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">Careers</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">Blog</a>
-            </li>
-            <li class="footer__item">
-                <a class="footer__link" href="#">Contact Us</a>
-            </li> -->
-        </ul>
-        <img src="img/icon.png" alt="Logo" class="footer__logo" />
-        <p class="footer__copyright">
-            &copy; Copyright by
-            <a class="footer__link twitter-link" target="_blank" href="https://azcast.arizona.edu/">The Bit Builders</a>.
-        </p>
-    </footer>
-
-    <div class="modal hidden">
-        <button class="btn--close-modal">&times;</button>
-        <h2 class="modal__header">
-            Use your <span class="highlight">student email</span> to sign up todayQ
-        </h2>
-        <form class="modal__form">
-            <label>First Name</label>
-            <input type="text" />
-            <label>Last Name</label>
-            <input type="text" />
-            <label>Student Email Address</label>
-            <input type="email" />
-            <button class="btn">Verify Email &rarr;</button>
-        </form>
-    </div>
-    <div class="overlay hidden"></div>
-
-    <!-- <script src="script.js"></script> -->
-</body>
-
+	<head>
+		<title>EduCade</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="color-scheme" content="light only" />
+		<meta name="description" content="An online arcade for students from universities nationwide" />
+		<meta property="og:site_name" content="EduCade" />
+		<meta property="og:title" content="EduCade" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="An online arcade for students from universities nationwide" />
+		<link href="https://fonts.googleapis.com/css?display=swap&family=Silkscreen:400,400italic%7CRaleway:400,400italic,100,100italic,300,300italic" rel="stylesheet" type="text/css" />
+		<link rel="icon" type="image/png" href="assets/images/favicon.png" />
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+		<link rel="stylesheet" href="assets/main.css" />
+		<noscript><link rel="stylesheet" href="assets/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<section id="home-section">
+						<div id="container01" class="container default">
+							<div class="wrapper">
+								<div class="inner">
+									<div id="mainLogo" class="image">
+										<span class="frame"><img src="assets/images/mainLogo.png" alt="" /></span>
+									</div>
+									<h1 id="text03" class="style2">EduCade</h1>
+									<p id="text04" class="style1">An online arcade for students from universities nationwide to team up, compete, and rank up!</p>
+									<ul id="buttons06" class="style1 buttons">
+										<li>
+											<a href="#games" class="button n01">Games</a>
+										</li><li>
+											<a href="#leaderboards" class="button n02">Leaderboards</a>
+										</li><li>
+											<a href="#signup" class="button n03">Create Account</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="games-section">
+						<div id="container03" class="container columns">
+							<div class="wrapper">
+								<div class="inner" data-reorder="1,0">
+									<div>
+										<div id="image06" class="style1 image" data-position="center">
+											<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA5MDAgODg0IiB3aWR0aD0iOTAwIiBoZWlnaHQ9Ijg4NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0iIzFkMGQzMiIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D" data-src="assets/images/image06.jpg" alt="" /></span>
+										</div>
+										<ul id="buttons09" class="style2 buttons">
+											<li>
+												<a href="#home" class="button n01">Play Now</a>
+											</li>
+										</ul>
+										<h2 id="text05" class="style3">Name of Game</h2>
+										<p id="text10" class="style4">GAME INSTRUCTIONS ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+									<div>
+										<div id="image03" class="style1 image" data-position="center">
+											<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA5MDAgNjAwIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjYwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI%2BPHJlY3QgZmlsbD0iIzM1Mjk2ZiIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg%3D%3D" data-src="assets/images/image03.jpg" alt="" /></span>
+										</div>
+										<ul id="buttons02" class="style2 buttons">
+											<li>
+												<a href="#home" class="button n01">Play Now</a>
+											</li>
+										</ul>
+										<h2 id="text17" class="style3">Name of Game</h2>
+										<p id="text16" class="style4">GAME INSTRUCTIONS ... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="leaderboards-section">
+						<div id="container04" class="container default">
+							<div class="wrapper">
+								<div class="inner">
+									<div id="image04" class="style2 image" data-position="center">
+										<span class="frame deferred"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCAxNTAwIDEwMDYiIHdpZHRoPSIxNTAwIiBoZWlnaHQ9IjEwMDYiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyZWN0IGZpbGw9IiMwOTA5MGIiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiLz48L3N2Zz4%3D" data-src="assets/images/image04.jpg" alt="" /></span>
+									</div>
+									<h2 id="text07" class="style3">Leaderboards</h2>
+									<p id="text09" class="style4">University Rankings &amp; Solo Rankings (Horizontal Scroll)</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="signup-section">
+						<div id="container05" class="container default">
+							<div class="wrapper">
+								<div class="inner">
+									<h2 id="text01" class="style3">Create Account</h2>
+									<p id="text06" class="style4">Please enter your name and university email address. We will verify your account to be able to play games soon!</p>
+									<form enctype="multipart/form-data" id="form02" method="post" action="#">
+										<div class="inner">
+											<div class="field">
+												<input type="text" name="untitled" id="form02-untitled" placeholder="Name" maxlength="256" required />
+											</div>
+											<div class="field">
+												<input type="text" name="username" id="form02-username" placeholder="Username" maxlength="256" required />
+											</div>
+											<div class="field">
+												<input type="email" name="student-email" id="form02-student-email" placeholder="Student Email" maxlength="128" required />
+											</div>
+											<div class="actions">
+												<button type="submit">Verify Account</button>
+											</div>
+										</div>
+										<input type="hidden" name="id" value="form02" />
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="contact-done-section">
+						<div id="container02" class="container default">
+							<div class="wrapper">
+								<div class="inner">
+									<h2 id="text02" class="style3">Game On!</h2>
+									<p id="text08" class="style4">Created by The Bit Builders from The University of Arizona, College of Applied Science and Technology</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script src="assets/main.js"></script>
+	</body>
 </html>
