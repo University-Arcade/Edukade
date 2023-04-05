@@ -1,2 +1,1 @@
-# nature-tours
 # Edukade-Mockup
