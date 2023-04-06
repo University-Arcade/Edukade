@@ -382,9 +382,9 @@ body.is-instant:after {
 }
 
 .image.style1 .frame {
-	width: 15rem;
-	height: 15rem;
-	border-radius: 0.25rem;
+	max-width: 100%;
+	width: auto;
+	border-radius: 2.625rem;
 }
 
 .image.style1 img {
@@ -460,6 +460,7 @@ h1.style2 span.p:nth-child(n + 2), h2.style2 span.p:nth-child(n + 2), h3.style2 
 }
 
 h1.style3, h2.style3, h3.style3, p.style3 {
+	text-align: center;
 	color: #FFFFFF;
 	font-family: 'Silkscreen', monospace;
 	font-size: 1.5em;
@@ -559,7 +560,7 @@ h1.style1 span.p:nth-child(n + 2), h2.style1 span.p:nth-child(n + 2), h3.style1 
 }
 
 .buttons.style2 li a {
-	display: inline-block;
+	display: inline-flex;
 	width: 10.5rem;
 	height: 2.5rem;
 	line-height: 2.5rem;
@@ -572,10 +573,27 @@ h1.style1 span.p:nth-child(n + 2), h2.style1 span.p:nth-child(n + 2), h3.style1 
 	font-size: 0.875em;
 	font-weight: 400;
 	border-radius: 0.375rem;
+	flex-direction: row-reverse;
+	transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.buttons.style2 li a svg {
+	display: block;
+	fill: #FFFFFF;
+	flex-grow: 0;
+	flex-shrink: 0;
+	height: 100%;
+	min-width: 16px;
+	width: 1em;
+	margin-left: 0.5em;
+	margin-right: calc(-0.125em + 0.175rem);
+	transition: fill 0.25s ease;
+}
+
+.buttons.style2 li a .label {
 	direction: var(--site-language-direction);
 	overflow: hidden;
 	text-overflow: ellipsis;
-	transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .buttons.style2 .button {
@@ -1263,7 +1281,7 @@ form .actions button:disabled {
 
 #container03 > .wrapper {
 	display: inline-block;
-	width: 36rem;
+	width: 50rem;
 	background-color: rgba(40,39,48,0.922);
 	box-shadow: 0rem 0.75rem 2.625rem 0rem rgba(40,39,48,0.522);
 	border-radius: 0.375rem;
@@ -1372,6 +1390,7 @@ form .actions button:disabled {
 
 #container03.columns > .wrapper > .inner > .full {
 	align-self: stretch;
+	min-height: calc(var(--viewport-height) - (var(--padding-vertical) * 2));
 }
 
 #container03.columns > .wrapper > .inner > .full:first-child {
@@ -1931,11 +1950,6 @@ form .actions button:disabled {
 		margin-bottom: 1.6875rem !important;
 	}
 	
-	.image.style1 .frame {
-		width: 15rem;
-		height: 18.75rem !important;
-	}
-	
 	.image.style1 img {
 		height: 100% !important;
 		object-fit: cover;
@@ -1999,6 +2013,10 @@ form .actions button:disabled {
 		letter-spacing: 0.175rem;
 		padding-left: calc(0.175rem + 0.5rem);
 		font-size: 0.875em;
+	}
+	
+	.buttons.style2 li a svg {
+		width: 1em;
 	}
 	
 	.buttons.style1 {
@@ -2564,10 +2582,6 @@ form .actions button:disabled {
 		--spacing: 0.65625rem;
 	}
 	
-	.image.style1 .frame {
-		height: 15rem !important;
-	}
-	
 	.image.style2 .frame {
 		height: 25rem !important;
 	}
@@ -2641,10 +2655,6 @@ form .actions button:disabled {
 	
 	#main > .inner > .active > .full:last-child {
 		margin-bottom: -1.125rem !important;
-	}
-	
-	.image.style1 .frame {
-		height: 13.125rem !important;
 	}
 	
 	.image.style2 .frame {

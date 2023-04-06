@@ -2208,6 +2208,22 @@
 		
 		};
 	
+	// Buttons: buttons02.
+		$('#buttons02 > li:nth-child(1) > a').addEventListener(
+			'click',
+			function(event) { 
+				console.log('https://educade-game2.netlify.app/');
+			}
+		);
+	
+	// Buttons: buttons09.
+		$('#buttons09 > li:nth-child(1) > a').addEventListener(
+			'click',
+			function(event) { 
+				console.log('https://educade-game1.netlify.app/');
+			}
+		);
+	
 	// Initialize "On Visible" animations.
 		onvisible.add('h1.style2, h2.style2, h3.style2, p.style2', { style: 'blur-in', speed: 1500, intensity: 5, delay: 0, staggerOrder: '', replay: false });
 
