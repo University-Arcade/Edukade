@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Data Entry Page</title>
+	<style>
+		body {
+			background-color: #1d1f28;
+			color: #eff5db;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		form {
+			display: inline-block;
+			margin-top: 10%;
+			width: 90%;
+			max-width: 500px;
+			text-align: left;
+		}
+		input[type=text], select {
+			display: block;
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			background-color: #343645;
+			color: #eff5db;
+		}
+
+		input[type=submit] {
+			background-color: transparent;
+			border: none;
+			font-size: 1.5em;
+			color: #eff5db;
+			cursor: pointer;
+			box-sizing: border-box;
+			height: auto;
+		}
+		input[type=submit]:hover {
+			color: #c7eecf;
+		}
+		.arrow {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 10px;
+			font-size: 3em;
+		}
+        
+	</style>
+</head>
+<body>
+	<form id="myForm">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+
+		<label for="schools">Schools:</label>
+		<select id="schools" name="schools" required>
+			<option value="">Choose a school:</option>
+		</select>
+
+		<input type="submit" value="&#10148;">
+	</form>
+
+	<script>
+		// Retrieve schools from JSON file
+		fetch('schools.json')
+			.then(response => response.json())
+			.then(data => {
+				// Populate schools dropdown
+				const schoolsDropdown = document.getElementById('schools');
+				data.forEach(school => {
+					const option = document.createElement('option');
+					option.value = school.id;
+					option.text = school.name;
+					schoolsDropdown.add(option);
+				});
+			});
+
+		// Save data on submit
+		const form = document.getElementById('myForm');
+		form.addEventListener('submit', function(event) {
+			event.preventDefault();
+			const username = document.getElementById('username').value;
+			const school = document.getElementById('schools').value;
+			localStorage.setItem('username', username);
+			localStorage.setItem('school', school);
+			alert(`Data saved:\nUsername: ${username}\nSchool: ${school}`);
+		});
+	</script>
+</body>
+</html>

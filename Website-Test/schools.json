@@ -1,0 +1,51 @@
+[
+    {
+      "id": "asu",
+      "name": "Arizona State University"
+    },
+    {
+        "id": "uofa",
+        "name": "University of Arizona"
+      },
+    {
+      "id": "cal",
+      "name": "University of California, Berkeley"
+    },
+    {
+      "id": "cu",
+      "name": "University of Colorado Boulder"
+    },
+    {
+      "id": "ore",
+      "name": "University of Oregon"
+    },
+    {
+      "id": "osu",
+      "name": "Oregon State University"
+    },
+    {
+      "id": "stan",
+      "name": "Stanford University"
+    },
+    {
+      "id": "ucla",
+      "name": "University of California, Los Angeles"
+    },
+    {
+      "id": "usc",
+      "name": "University of Southern California"
+    },
+    {
+      "id": "utah",
+      "name": "University of Utah"
+    },
+    {
+      "id": "uw",
+      "name": "University of Washington"
+    },
+    {
+      "id": "wsu",
+      "name": "Washington State University"
+    }
+  ]
+  
