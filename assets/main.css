@@ -24,15 +24,15 @@ body:before {
 	transform: scale(1);
 	width: 100vw;
 	z-index: 0;
-	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.25%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(67,66,89,0.271), rgba(67,66,89,0.271)), url('images/bg.jpg');
+	/* background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.25%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(67,66,89,0.271), rgba(67,66,89,0.271)), url('images/bg.jpg'); */
 	background-size: 512px, auto, cover;
 	background-position: center, 0% 0%, center;
 	background-repeat: repeat, repeat, repeat;
-	background-color: #FFFFFF;
+	background-color: #343645;
 }
 
 body:after {
-	background-color: #2E2E36;
+	background-color: #1d1f28
 	content: '';
 	display: block;
 	height: 100%;
@@ -440,7 +440,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 h1.style2, h2.style2, h3.style2, p.style2 {
-	color: #FFFFFF;
+	color: #eff5db;
 	font-family: 'Rajdhani', monospace;
 	font-size: 3.75em;
 	line-height: 0.875;
@@ -461,7 +461,7 @@ h1.style2 span.p:nth-child(n + 2), h2.style2 span.p:nth-child(n + 2), h3.style2 
 
 h1.style3, h2.style3, h3.style3, p.style3 {
 	text-align: center;
-	color: #FFFFFF;
+	color: #eff5db;
 	font-family: 'Rajdhani', monospace;
 	font-size: 1.5em;
 	line-height: 0.875;
@@ -482,7 +482,7 @@ h1.style3 span.p:nth-child(n + 2), h2.style3 span.p:nth-child(n + 2), h3.style3 
 
 h1.style4, h2.style4, h3.style4, p.style4 {
 	text-align: center;
-	color: #FFFFFF;
+	color: #eff5db;
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -503,7 +503,7 @@ h1.style4 span.p:nth-child(n + 2), h2.style4 span.p:nth-child(n + 2), h3.style4 
 
 h1.style1, h2.style1, h3.style1, p.style1 {
 	text-align: center;
-	color: #FFFFFF;
+	color: #eff5db;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	line-height: 1.5;
@@ -579,7 +579,7 @@ h1.style1 span.p:nth-child(n + 2), h2.style1 span.p:nth-child(n + 2), h3.style1 
 
 .buttons.style2 li a svg {
 	display: block;
-	fill: #FFFFFF;
+	fill: #fd5f56;
 	flex-grow: 0;
 	flex-shrink: 0;
 	height: 100%;
@@ -597,16 +597,16 @@ h1.style1 span.p:nth-child(n + 2), h2.style1 span.p:nth-child(n + 2), h3.style1 
 }
 
 .buttons.style2 .button {
-	background-color: #A6A6A6;
-	color: #FFFFFF;
-	background-image: linear-gradient(45deg, #000000 0%, rgba(166,166,166,0.008) 100%);
+	background-color: #c7eecf;
+	color: #fd5f56;
+	background-image: #c7eecf;
 	background-position: 0% 0%;
 	background-repeat: repeat;
 	background-size: cover;
 }
 
 .buttons.style2 .button:hover {
-	background-color: #000000 !important;
+	background-color: #1d1f28 !important;
 }
 
 .buttons.style2 li a:hover {
@@ -649,13 +649,13 @@ h1.style1 span.p:nth-child(n + 2), h2.style1 span.p:nth-child(n + 2), h3.style1 
 }
 
 .buttons.style1 .button {
-	color: #FFFFFF;
-	border: solid 2px #FFFFFF;
+	color: #eff5db;
+	border: solid 2px #eff5db;
 }
 
 .buttons.style1 .button:hover {
-	border-color: #A6A6A6 !important;
-	color: #A6A6A6 !important;
+	border-color: #fd5f56 !important;
+	color: #fd5f56 !important;
 }
 
 .buttons.style1 li a:hover {
@@ -873,7 +873,7 @@ form .actions button:disabled {
 	line-height: 1.5;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	font-weight: 400;
-	color: #000000;
+	color: #1d1f28;
 }
 
 #form02 .field button {
@@ -882,19 +882,18 @@ form .actions button:disabled {
 	line-height: 2rem;
 	width: 2rem;
 	border-radius: 0.24rem;
-	background-color: #A6A6A6;
-	background-image: linear-gradient(45deg, #000000 0%, rgba(166,166,166,0.008) 100%);
+	background-color: #c7eecf;
 	background-position: 0% 0%;
 	background-repeat: repeat;
 	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
 #form02 .field button:hover {
-	background-color: #000000;
+	background-color: #1d1f28;
 }
 
 #form02 .field button svg {
-	fill: #FFFFFF;
+	fill: #eff5db;
 	transition: fill 0.25s ease;
 }
 
@@ -907,7 +906,7 @@ form .actions button:disabled {
 }
 
 #form02 input[type="text"], #form02 input[type="email"], #form02 input[type="tel"], #form02 input[type="number"], #form02 textarea, #form02 select, #form02 .file {
-	color: #FFFFFF;
+	color: #eff5db;
 	border: solid 1px #A6A6A6;
 }
 
@@ -917,7 +916,7 @@ form .actions button:disabled {
 }
 
 #form02 input[type="checkbox"] + label {
-	color: #FFFFFF;
+	color: #eff5db;
 }
 
 #form02 input[type="text"], #form02 input[type="email"], #form02 input[type="tel"], #form02 input[type="number"], #form02 select, #form02 .file {
@@ -941,7 +940,7 @@ form .actions button:disabled {
 
 #form02 input[type="checkbox"] + label:before {
 	border-radius: 0.375rem;
-	color: #FFFFFF;
+	color: #eff5db;
 	border: solid 1px #A6A6A6;
 	background-size: 1.0625rem;
 	height: 1.875rem;
@@ -1001,9 +1000,8 @@ form .actions button:disabled {
 	direction: var(--site-language-direction);
 	overflow: hidden;
 	text-overflow: ellipsis;
-	background-color: #A6A6A6;
-	color: #FFFFFF;
-	background-image: linear-gradient(45deg, #000000 0%, rgba(166,166,166,0.008) 100%);
+	background-color: #c7eecf;
+	color: #fd5f56;
 	background-position: 0% 0%;
 	background-repeat: repeat;
 	background-size: cover;
@@ -1012,7 +1010,7 @@ form .actions button:disabled {
 }
 
 #form02 .actions button:hover {
-	background-color: #000000;
+	background-color: #343645;
 }
 
 #form02 .inner > :first-child > label:first-child {
@@ -1053,27 +1051,27 @@ form .actions button:disabled {
 }
 
 #form02 ::-webkit-input-placeholder {
-	color: #FFFFFF;
+	color: #eff5db;
 	opacity: 0.55;
 }
 
 #form02 :-moz-placeholder {
-	color: #FFFFFF;
+	color: #eff5db;
 	opacity: 0.55;
 }
 
 #form02 ::-moz-placeholder {
-	color: #FFFFFF;
+	color: #eff5db;
 	opacity: 0.55;
 }
 
 #form02 :-ms-input-placeholder {
-	color: #FFFFFF;
+	color: #eff5db;
 	opacity: 0.55;
 }
 
 #form02 .file[data-filename=""]:before {
-	color: #FFFFFF;
+	color: #eff5db;
 	opacity: 0.55;
 }
 
