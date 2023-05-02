@@ -4150,6 +4150,14 @@ map.set(this,IBehaviorInstance._GetInitInst().GetSdkInstance())}set isEnabled(e)
 }
 
 {
+'use strict';{const C3=self.C3;C3.Behaviors.bound=class BoundBehavior extends C3.SDKBehaviorBase{constructor(opts){super(opts)}Release(){super.Release()}}}{const C3=self.C3;C3.Behaviors.bound.Type=class BoundType extends C3.SDKBehaviorTypeBase{constructor(behaviorType){super(behaviorType)}Release(){super.Release()}OnCreate(){}}}
+{const C3=self.C3;const MODE=0;C3.Behaviors.bound.Instance=class BoundInstance extends C3.SDKBehaviorInstanceBase{constructor(behInst,properties){super(behInst);this._mode=0;if(properties)this._mode=properties[MODE];this._StartTicking2()}Release(){super.Release()}SaveToJson(){return{"m":this._mode}}LoadFromJson(o){this._mode=o["m"]}Tick2(){const wi=this._inst.GetWorldInfo();const bbox=wi.GetBoundingBox();const layout=wi.GetLayout();let isChanged=false;if(this._mode===0){if(wi.GetX()<0){wi.SetX(0);
+isChanged=true}if(wi.GetY()<0){wi.SetY(0);isChanged=true}if(wi.GetX()>layout.GetWidth()){wi.SetX(layout.GetWidth());isChanged=true}if(wi.GetY()>layout.GetHeight()){wi.SetY(layout.GetHeight());isChanged=true}}else{if(bbox.getLeft()<0){wi.OffsetX(-bbox.getLeft());isChanged=true}if(bbox.getTop()<0){wi.OffsetY(-bbox.getTop());isChanged=true}if(bbox.getRight()>layout.GetWidth()){wi.OffsetX(-(bbox.getRight()-layout.GetWidth()));isChanged=true}if(bbox.getBottom()>layout.GetHeight()){wi.OffsetY(-(bbox.getBottom()-
+layout.GetHeight()));isChanged=true}}if(isChanged)wi.SetBboxChanged()}GetPropertyValueByIndex(index){switch(index){case MODE:return this._mode}}SetPropertyValueByIndex(index,value){switch(index){case MODE:this._mode=value;break}}}}{const C3=self.C3;C3.Behaviors.bound.Cnds={}}{const C3=self.C3;C3.Behaviors.bound.Acts={}}{const C3=self.C3;C3.Behaviors.bound.Exps={}};
+
+}
+
+{
 const C3 = self.C3;
 self.C3_GetObjectRefTable = function () {
 	return [
@@ -4161,6 +4169,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TextBox,
 		C3.Behaviors.Bullet,
 		C3.Behaviors.solid,
+		C3.Behaviors.bound,
 		C3.Plugins.Mouse,
 		C3.Plugins.Audio,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
@@ -4317,6 +4326,7 @@ self.C3_JsPropNameTable = [
 	{BallSpeedUp: 0},
 	{BallSpeed: 0},
 	{Lives: 0},
+	{BoundToLayout: 0},
 	{Player: 0},
 	{Mutipler: 0},
 	{Ring: 0},
